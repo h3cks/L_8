@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Мій Мобільний Застосунок</title>
+    <meta name="description" content="Створіть обліковий запис або увійдіть у свій обліковий запис для використання нашого мобільного застосунку. Простий, веселий та креативний спосіб керувати вашими завданнями.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Підключення FontAwesome -->
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/166/960/non_2x/phone-icon-logo-design-template-vector.jpg" alt="Logo">
+        </div>
+        <nav class="menu">
+            <h1>МІЙ ЗАСТОСУНОК</h1>
+            <ul>
+                <li><a href="#about">Про додаток</a></li>
+                <li><a href="#download">Як завантажити</a></li>
+                <li><a href="#pricing">Ціна</a></li>
+                <li><a href="#about-us">Про нас</a></li>
+                <li><a href="#contact">Контакти</a></li>
+                <li><a href="login.html">Авторизація</a></li>
+                <li><a href="registration.html">Реєстрація</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- Main section -->
+    <main>
+        <section id="about">
+            <h2>Про додаток</h2>
+            <p><b>Мій Застосунок</b> — це мобільний додаток, що допомагає вам керувати своїми завданнями та підвищувати продуктивність.</p>
+            <p>Спілкуйтеся з друзями, діліться своїми досягненнями та відкривайте нові можливості разом з нами!</p>
+        </section>
+	<button id="open-lightbox-btn" class="lightbox-btn"><i class="fas fa-envelope"></i> Відкрити форму</button>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox-overlay">
+            <div class="lightbox-content">
+                <span id="close-lightbox-btn" class="close-btn"><i class="fas fa-times"></i></span>
+                <form id="contact-form" action="#" method="post">
+                    <h2>Контактна форма</h2>
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Надіслати</button>
+                </form>
+            </div>
+        </div>
+
+	<section id="download">
+            <h2>Як завантажити</h2>
+            <p>Додаток доступний для платформ iOS та Android. Завантажте його за допомогою посилань нижче:</p>
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.example.app">Завантажити з Google Play</a></li>
+                <li><a href="https://apps.apple.com/ru/app/example-app/id123456789">Завантажити з App Store</a></li>
+            </ul>
+        </section>
+
+        <section id="pricing">
+            <h2>Ціна</h2>
+            <p>Ви можете скористатися різними тарифами для використання нашого застосунку:</p>
+            <ol>
+                <li>Безкоштовний доступ до основних функцій</li>
+                <li>Преміум підписка — $9.99 на місяць</li>
+                <li>Професійний план — $19.99 на місяць</li>
+            </ol>
+        </section>
+
+        <section id="triangle-perimeter">
+            <h2>Розрахунок Периметра Трикутника</h2>
+            <form id="perimeterForm">
+                <div class="form-group">
+                    <label for="sideA">Сторона A:</label>
+                    <input type="text" id="sideA" name="sideA" placeholder="Введіть довжину сторони A">
+                    <small class="error-message" id="errorA"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="sideB">Сторона B:</label>
+                    <input type="text" id="sideB" name="sideB" placeholder="Введіть довжину сторони B">
+                    <small class="error-message" id="errorB"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="sideC">Сторона C:</label>
+                    <input type="text" id="sideC" name="sideC" placeholder="Введіть довжину сторони C">
+                    <small class="error-message" id="errorC"></small>
+                </div>
+
+                <button type="button" id="calculateBtn">Обчислити</button>
+                <button type="button" id="resetBtn">Очистити</button>
+            </form>
+            <p id="result"></p>
+        </section>
+
+        <section id="about-us">
+            <h2>Про нас</h2>
+            <p>Наша команда прагне створити найкращий досвід для користувачів, пропонуючи нові функції та оновлення нашого застосунку.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Контакти</h2>
+            <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+            <p>Телефон: <a href="tel:+380123456789">+380 123 456 789</a></p>
+        </section>
+    </main>
+    <!-- /Main section -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://static.vecteezy.com/system/resources/previews/007/166/960/non_2x/phone-icon-logo-design-template-vector.jpg" alt="Website Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#about">Про додаток</a></li>
+                    <li><a href="#download">Як завантажити</a></li>
+                    <li><a href="#pricing">Ціна</a></li>
+                    <li><a href="#about-us">Про нас</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 Мій Мобільний Застосунок. Всі права захищені.
+        </div>
+    </footer>
+    <script src="script.js"></script> <!-- Підключення JavaScript -->
+    <script src="scriptT.js"></script> <!-- Підключення JavaScript -->
+</body>
+</html>
